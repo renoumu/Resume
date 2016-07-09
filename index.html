@@ -3,21 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<title>RenoU的个人简历</title>
-	<!-- <meta http-equiv="refresh" content="3;url=http://hi.baidu.com/mooners/" /> -->
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
 	<style type="text/css">
 		body{background: black;font-family: "微软雅黑";}
 		*{margin: 0px;padding-left: 0px;}
 		.main{width: 1000px;height: 600px;margin: auto;overflow: hidden;position: relative;}
 		.bg{
 			width: 1000px;height: 600px;opacity: 0.2;background: url(img/indexBg.jpg);}
-		.animated{font-size: 50px;color: #bbbbbb;text-align: center;line-height: 200px;position: absolute;z-index: 2;top: 0px;left: 5%;}
+		.anima{font-size: 50px;color: #bbbbbb;text-align: center;line-height: 200px;position: absolute;z-index: 2;top: 0px;left: 5%;}
 		.navn{position: absolute;bottom: 14px;left: 20px;}
 		.navn ul{margin-top: 56px;}
 		.navn ul li{float: left;font-size: 14px;font-weight: bold;margin-left: 20px;}
-		.navn ul li a{color: #443f3c;text-decoration: none;}
+		.navn ul li a{color: #443f3c;text-decoration: none;-webkit-transition: all 1s;}
+		.navn ul li a:hover{color: #fff;box-shadow: 0px 3px 9px #443f3c;position: relative;top: -2px;}
 		.navn ul .list-1{width: 56px;border-bottom: 2px solid #03e57e;}
 		.navn ul .list-2{width: 56px;border-bottom: 2px solid #53c9e2;}
 		.navn ul .list-3{width: 56px;border-bottom: 2px solid #ff6b8b;}
@@ -27,23 +28,22 @@
 		.navn ul .list-7{width: 56px;border-bottom: 2px solid #c900a5;}
 	</style>
 	<script type="text/javascript">
-	window.addEventListener("load",function(){
-        var myaudio=document.getElementById("bgAudio");
-           myaudio.volume=0.004;//表示的是播放音量为一半
-           myaudio.play();
-    });
-</script>
+		window.addEventListener("load",function(){
+	        var myaudio=document.getElementById("bgAudio");
+	           myaudio.volume=0.002;//表示的是播放音量为一半
+	           myaudio.play();
+	    });
+	</script>
 </head>
 <body>
 	<div class="main">
 		<div class="bg"></div>
-		<span></span>
-		<div class="animated infinite flipInX">RenoU的简历</div>
-		<div class="navn clear">
+		<div class="anima animated infinite flipInX">RenoU的简历</div>
+		<div class="animated bounceInRight navn clear">
 			<img class="fl" src="img/logo.png" alt="">
 			<ul class="clear fl">
-				<li class="list-1"><a href="#">个人信息</a></li>
-				<li class="list-2"><a href="#">专业技能</a></li>
+				<li class="list-1"><a href="person.html">个人信息</a></li>
+				<li class="list-2"><a href="skills.html">专业技能</a></li>
 				<li class="list-3"><a href="#">项目经验</a></li>
 				<li class="list-4"><a href="#">工作经验</a></li>
 				<li class="list-5"><a href="#">自我评价</a></li>
@@ -51,8 +51,7 @@
 				<li class="list-7"><a href="#">兴趣爱好</a></li>
 			</ul>
 		</div>
-		<audio id="bgAudio" src="song/Hello_Seattle.mp3" autoplay loop>
-</audio>
+		<audio id="bgAudio" src="song/Hello_Seattle.mp3" autoplay loop></audio>
 	</div>
 </body>
 </html>
