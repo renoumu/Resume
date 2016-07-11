@@ -2,56 +2,33 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>RenoU的个人简历</title>
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
-	<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
-	<style type="text/css">
-		body{background: black;font-family: "微软雅黑";}
-		*{margin: 0px;padding-left: 0px;}
-		.main{width: 1000px;height: 600px;margin: auto;overflow: hidden;position: relative;}
-		.bg{
-			width: 1000px;height: 600px;opacity: 0.2;background: url(img/indexBg.jpg);}
-		.anima{font-size: 50px;color: #bbbbbb;text-align: center;line-height: 200px;position: absolute;z-index: 2;top: 0px;left: 5%;}
-		.navn{position: absolute;bottom: 14px;left: 20px;}
-		.navn ul{margin-top: 56px;}
-		.navn ul li{float: left;font-size: 14px;font-weight: bold;margin-left: 20px;}
-		.navn ul li a{color: #443f3c;text-decoration: none;-webkit-transition: all 1s;}
-		.navn ul li a:hover{color: #fff;box-shadow: 0px 3px 9px #443f3c;position: relative;top: -2px;}
-		.navn ul .list-1{width: 56px;border-bottom: 2px solid #03e57e;}
-		.navn ul .list-2{width: 56px;border-bottom: 2px solid #53c9e2;}
-		.navn ul .list-3{width: 56px;border-bottom: 2px solid #ff6b8b;}
-		.navn ul .list-4{width: 56px;border-bottom: 2px solid #9506b5;}
-		.navn ul .list-5{width: 56px;border-bottom: 2px solid #d1d301;}
-		.navn ul .list-6{width: 56px;border-bottom: 2px solid #006fcd;}
-		.navn ul .list-7{width: 56px;border-bottom: 2px solid #c900a5;}
-	</style>
-	<script type="text/javascript">
-		window.addEventListener("load",function(){
-	        var myaudio=document.getElementById("bgAudio");
-	           myaudio.volume=0.005;//表示的是播放音量为一半
-	           myaudio.play();
-	    });
-	</script>
+	<title>移动端项目</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/index.js"></script>
+	<meta name="viewport" content="width=640,user-scalable=no" />
 </head>
 <body>
-	<div class="main">
-		<div class="bg"></div>
-		<div class="anima animated infinite flipInX">RenoU的简历</div>
-		<div class="animated bounceInRight navn clear">
-			<img class="fl" src="img/logo.png" alt="">
-			<ul class="clear fl">
-				<li class="list-1"><a href="person.html">个人信息</a></li>
-				<li class="list-2"><a href="skills.html">专业技能</a></li>
-				<li class="list-3"><a href="#">项目经验</a></li>
-				<li class="list-4"><a href="#">工作经验</a></li>
-				<li class="list-5"><a href="#">自我评价</a></li>
-				<li class="list-6"><a href="#">个人学历</a></li>
-				<li class="list-7"><a href="#">兴趣爱好</a></li>
-			</ul>
+	<script>document.body.style.height = view().h+"px";</script>
+	<section class="page pageShow" id="welcome">
+		<div class="tree">
+			<img src="img/tree.jpg" alt="">
+			<div class="welcome2">
+				<img src="img/title.png" alt="">
+				<span class="shake"></span>
+			</div>
+			<img src="img/title2.png" class="tree3">
+			<span class="cloud"></span>
+			<span class="cloud"></span>
+			<span class="cloud"></span>
 		</div>
-		<audio id="bgAudio" src="song/ハロハワユ.mp3" autoplay loop></audio>
-	</div>
+		<h1 id="logo">
+			<img src="img/logo.png" alt="">
+		</h1>
+	</section>
+	<section class="page">上传成功</section>
+	<section class="page">表单页</section>
+	<section class="page">新闻业</section>
+	<section class="page">跳转业</section>
+	<section class="page pageShow">首页</section>
 </body>
 </html>
