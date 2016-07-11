@@ -10,6 +10,7 @@ body{margin: 0px;font-family: Arial,"微软雅黑";color: #666;position: relativ
 .page:nth-of-type(5){z-index: 6;}
 
 /* 欢迎页动画效果*/
+#welcome{transition: 3s;}
 @-webkit-keyframes tree{
 	100%{
 		-webkit-transform:translateY(0px);
@@ -54,22 +55,22 @@ body{margin: 0px;font-family: Arial,"微软雅黑";color: #666;position: relativ
 }
 @keyframes shake{
 	0%{
-		-webkit-transform:rotate(-50deg);
+		transform:rotate(-50deg);
 	}
 	20%{
-		-webkit-transform:rotate(40deg);
+		transform:rotate(40deg);
 	}
 	40%{
-		-webkit-transform:rotate(-30deg);
+		transform:rotate(-30deg);
 	}
 	60%{
-		-webkit-transform:rotate(20deg);
+		transform:rotate(20deg);
 	}
 	80%{
-		-webkit-transform:rotate(-10deg);
+		transform:rotate(-10deg);
 	}
 	100%{
-		-webkit-transform:rotate(0deg);
+		transform:rotate(0deg);
 	}
 }
 @-webkit-keyframes cloud{
@@ -87,6 +88,23 @@ body{margin: 0px;font-family: Arial,"微软雅黑";color: #666;position: relativ
 	}
 	100%{
 		-webkit-transform:translateX(0px);
+	}
+}
+@keyframes cloud{
+	0%{
+		transform:translateX(0px);
+	}
+	30%{
+		transform:translateX(-10px);
+	}
+	50%{
+		transform:translateX(0px);
+	}
+	70%{
+		transform:translateX(10px);
+	}
+	100%{
+		transform:translateX(0px);
 	}
 }
 /* 欢迎页*/
